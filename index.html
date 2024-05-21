@@ -1,126 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navigation Bars</title>
     <style>
-
-        section{
-            width: 1400px;
-            height: 500px;
-            
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+        }
+        .top-nav .left, .top-nav .right {
+            display: flex;
+            align-items: center;
+        }
+        .top-nav .left a, .top-nav .right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .top-nav .left a {
+            font-size: 14px;
+        }
+        .top-nav .right a {
+            font-size: 12px;
+        }
+        .top-nav .right img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
         }
 
-        .card{
-            width: 300px;
-            height: 400px;
-            /* text-align: center; */
-            display: inline-block;
-            margin-left: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 30px;
-            
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-
+        .main-nav {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
         }
-        .card img{
-            width: 300px;
-            height: 250px;
+        .main-nav .left, .main-nav .right {
+            display: flex;
+            align-items: center;
         }
-
-      .card h1{
-            padding-top: 10px;
-            font-size: larger;
-            margin-left: 15px;
+        .main-nav .left a, .main-nav .right a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
         }
-        p{
-            margin-left: 15px;
+        .main-nav .left a:last-child {
+            color: red;
         }
-
-        
-
+        .main-nav .right img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+        .main-nav .search-bar {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .main-nav .search-bar input {
+            border: none;
+            outline: none;
+        }
     </style>
 </head>
 <body>
-  
 
-  
-    <section>
-        <div class="card">
-           <div><img src="image.png" alt="shoe_img"></div>
-           <h1>TRAINING SHOES</h1>
-           <P>Nike Men NX Trainer</P>
-           <h1>₹7,599</h1>
+    <div class="top-nav">
+        <div class="left">
+            <a href="#">MORE BRANDS &#9662;</a>
         </div>
-        <div class="card">
-            <div><img src="image copy.png" alt="shoe_img"></div>
-            <h1>CLASSICS SHOES</h1>
-            <P>Reebok men classics</P>
-            <h1>₹9,999</h1>
-         </div>
-         <div class="card">
-            <div><img src="image copy 2.png" alt="shoe_img"></div>
-            <h1>CLASSICS SHOES</h1>
-            <P>Reebok men classics</P>
-            <h1>₹12,599</h1>
-         </div>
-         <div class="card">
-            <div><img src="image copy 3.png" alt="shoe_img"></div>
-            <h1>CLASSICS SHOES</h1>
-            <P>Campus Men classics shoes</P>
-            <h1>₹8,599</h1>
-         </div>
-         <div class="card">
-            <div><img src="image copy 4.png" alt="shoe_img"></div>
-            <h1>CLASSICS SHOES</h1>
-            <P>Campus Men classics shoes</P>
-            <h1>₹6,899</h1>
-         </div>
-         <div class="card">
-             <div><img src="image copy 5.png" alt="shoe_img"></div>
-             <h1>CLASSICS SHOES</h1>
-             <P>Campus Men classics shoes</P>
-             <h1>₹7,599</h1>
-          </div>
-          <div class="card">
-             <div><img src="image copy 6.png" alt="shoe_img"></div>
-             <h1>TRAINING SHOES</h1>
-           <P>Nike Men NX Trainer</P>
-           <h1>₹3,999</h1>
-          </div>
-          <div class="card">
-             <div><img src="image copy 7.png" alt="shoe_img"></div>
-             <h1>TRAINING SHOES</h1>
-             <P>Reebok Women NX Trainer</P>
-             <h1>₹5,999</h1>
-          </div>
-          <div class="card">
-            <div><img src="image copy 4.png" alt="shoe_img"></div>
-            <h1>CLASSICS SHOES</h1>
-            <P>Campus Men classics shoes</P>
-            <h1>₹6,899</h1>
-         </div>
-         <div class="card">
-             <div><img src="image copy 5.png" alt="shoe_img"></div>
-             <h1>CLASSICS SHOES</h1>
-             <P>Campus Men classics shoes</P>
-             <h1>₹7,599</h1>
-          </div>
-          <div class="card">
-             <div><img src="image copy 6.png" alt="shoe_img"></div>
-             <h1>TRAINING SHOES</h1>
-           <P>Nike Men NX Trainer</P>
-           <h1>₹3,999</h1>
-          </div>
-          <div class="card">
-             <div><img src="image copy 7.png" alt="shoe_img"></div>
-             <h1>TRAINING SHOES</h1>
-             <P>Reebok Women NX Trainer</P>
-             <h1>₹5,999</h1>
-          </div>
-    </section>
+        <div class="right">
+            <a href="#">STORES</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">LOG IN</a>
+            <a href="#"><img src="https://example.com/user-icon.png" alt="User Icon"></a>
+            <a href="#"><img src="https://example.com/favorite-icon.png" alt="Favorite Icon"></a>
+            <a href="#"><img src="https://example.com/cart-icon.png" alt="Cart Icon"></a>
+        </div>
+    </div>
+
+    <div class="main-nav">
+        <div class="left">
+            <a href="#"><img src="https://example.com/reebok-logo.png" alt="Reebok Logo"></a>
+            <a href="#">NEW</a>
+            <a href="#">ICONS</a>
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">SPORTS</a>
+            <a href="#">CLASSIC</a>
+            <a href="#">SALE</a>
+        </div>
+        <div class="right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <a href="#"><img src="https://example.com/delivery-icon.png" alt="Delivery Icon"></a>
+            <a href="#">EXPRESS DELIVERY</a>
+        </div>
+    </div>
 
 </body>
 </html>
