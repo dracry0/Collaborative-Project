@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bars</title>
+    <title>Reebok shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +23,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px; /* Increase padding for more height */
+            padding: 20px 30px;
         }
         .top-nav .left, .top-nav .right {
             display: flex;
@@ -26,7 +33,7 @@
             color: white;
             text-decoration: none;
             margin: 0 10px;
-            line-height: 24px; /* Increase line-height for better vertical alignment */
+            line-height: 24px;
         }
         .top-nav .left a {
             font-size: 14px;
@@ -45,7 +52,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 20px; /* Increase padding for more height */
+            padding: 20px 20px;
             border-bottom: 1px solid #ddd;
         }
         .main-nav .left, .main-nav .right {
@@ -57,7 +64,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 14px;
-            line-height: 24px; /* Increase line-height for better vertical alignment */
+            line-height: 24px;
         }
         .main-nav .left a:last-child {
             color: red;
@@ -76,6 +83,11 @@
             border: none;
             outline: none;
         }
+
+        .img{
+            width: 10%;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -86,17 +98,29 @@
         </div>
         <div class="right">
             <a href="#">STORES</a>
+            <span class="material-symbols-outlined">
+                live_help
+            </span>
             <a href="#">CONTACT US</a>
+            <span class="material-symbols-outlined">
+                person
+            </span>
             <a href="#">LOG IN</a>
+            
             <a href="#"><img src="https://example.com/user-icon.png" alt="User Icon"></a>
-            <a href="#"><img src="https://example.com/favorite-icon.png" alt="Favorite Icon"></a>
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <span class="material-symbols-outlined">
+                shopping_bag
+            </span>
             <a href="#"><img src="https://example.com/cart-icon.png" alt="Cart Icon"></a>
         </div>
     </div>
 
     <div class="main-nav">
         <div class="left">
-            <a href="#"><img src="https://example.com/reebok-logo.png" alt="Reebok Logo"></a>
+            <a href="#" ><img src="./reebok_icon.png" alt="Reebok Logo"></a>
             <a href="#">NEW</a>
             <a href="#">ICONS</a>
             <a href="#">MEN</a>
@@ -109,8 +133,7 @@
             <div class="search-bar">
                 <input type="text" placeholder="Search">
             </div>
-            <a href="#"><img src="https://example.com/delivery-icon.png" alt="Delivery Icon"></a>
-            <a href="#">EXPRESS DELIVERY</a>
+            <img src="./express_delivery.png" alt="Delivery Icon" class="img" >
         </div>
     </div>
 
